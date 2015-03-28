@@ -3,6 +3,9 @@ Vagrant box for running Jenkins with PHP projects according to [jenkins-php.org]
 
 Vagrant box: https://atlas.hashicorp.com/daithi/boxes/jenkins-php
 
+# Installation
 ```bash
-vagrant up daithi/jenkins-php --provider virtualbox
+git clone https://github.com/daithi-coombes/vagrant-jenkins-php
+cd vagrant-jenkins-php
+vagrant up
 ```
