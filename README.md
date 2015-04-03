@@ -18,10 +18,13 @@ For this example take your project root as being `/var/www/html/my-project/publi
 
 With the above the jenkins vm will automatically look project files in `/opt/vagrant-jenkins-php/my-project`
 Then when you
-want to build use `rsync` to copy the files to the `project` folder like so:
+want to build use `rsync` to copy the files to the `project` folder. Vagrant isn't handling linking too well so `ln -s` symlinks aren't being followed by the vm.
+To get around this I use my IDE's build functions to copy the project to the relevant folder.
+
+[rsync](http://linux.die.net/man/1/rsync)
 ```
-mdkir -p /path/to/vagrant-jenkins-php/project/my-project/
-rsync -av /var/www/nitevibe.loc/public_html/* ./ --exclude vendor
+cd /opt/vagrant-jenkins-php/project
+rsync -av /var/www/html/my-project/public_html/* ./ --exclude vendor
 ```
 
-Login to the jenkins vm at: http://localhost:8081 and setup your jenkins job.
+Other copy commandlines: [Copy folder recursively, excluding some folders](http://stackoverflow.com/questions/2193584/copy-folder-recursively-excluding-some-folders)
