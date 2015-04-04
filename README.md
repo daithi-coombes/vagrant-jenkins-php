@@ -1,14 +1,15 @@
-# vagrant-jenkins-php
+# vagrant-jenkins-php beta
 Vagrant box for running Jenkins with PHP projects according to [jenkins-php.org](http://jenkins-php.org/)
 
-<b>nb</b> project is in `alpha` but [beta](https://github.com/daithi-coombes/vagrant-jenkins-php/milestones/beta) is coming shortly. Make sure you read the [issues](https://github.com/daithi-coombes/vagrant-jenkins-php/issues)
-
+Initial box:
 Vagrant box: https://atlas.hashicorp.com/daithi/boxes/jenkins-php
 
 # Installation
 ```bash
 git clone https://github.com/daithi-coombes/vagrant-jenkins-php
 cd vagrant-jenkins-php
+vagrant box add jenkins-php-dev http://tools.swergroup.com/downloads/wheezy32.box
+vagrant init jenkins-php-dev
 vagrant up
 ```
 goto [http://localhost:8081](http://localhost:8081) to access the `Jenkins CI`. Also please read the [issues](https://github.com/daithi-coombes/vagrant-jenkins-php/issues) as this project is still in `alpha` - [beta](https://github.com/daithi-coombes/vagrant-jenkins-php/milestones/beta) coming soon.
