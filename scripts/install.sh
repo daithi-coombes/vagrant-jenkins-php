@@ -1,5 +1,3 @@
-#!/bin/bash
-
 sudo sed -i -e 's/\.it\./\.ie\./g' /etc/apt/sources.list
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -21,6 +19,7 @@ if [ ! -f /etc/init.d/jenkins ]; then
 	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 	sudo apt-get update
 	sudo apt-get -y install jenkins
+	sudo service jenkins start
 	wget http://localhost:8080/jnlpJars/jenkins-cli.jar
 	java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations xunit
 	java -jar jenkins-cli.jar -s http://localhost:8080 safe-restart

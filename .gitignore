@@ -2,6 +2,7 @@
 .vagrant
 .composer/
 project/
+jenkins-cli.jar
 
 # build
 !build/phpmd.xml
