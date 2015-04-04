@@ -2,6 +2,20 @@ sudo sed -i -e 's/\.it\./\.ie\./g' /etc/apt/sources.list
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
+if [ ! -f /etc/init.d/jenkins ]; then
+	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+	sudo apt-get update
+	sudo apt-get -y install jenkins
+	sudo service jenkins start
+	until [ "`curl --silent --show-error --connect-timeout 1 -I http://localhost:8080`" !="" ];
+	do
+		wget http://localhost:8080/jnlpJars/jenkins-cli.jar
+		java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations xunit
+		java -jar jenkins-cli.jar -s http://localhost:8080 safe-restart
+	done
+fi
+
 sudo apt-get -y install php5-cli curl
 sudo apt-get -y install php5-curl php5-xsl php5-xdebug
 
@@ -13,17 +27,6 @@ fi
 
 export COMPOSER_HOME=/vagrant/.composer
 export PATH=$PATH:/vagrant/.composer/vendor/bin
-
-if [ ! -f /etc/init.d/jenkins ]; then
-	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
-	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
-	sudo apt-get update
-	sudo apt-get -y install jenkins
-	sudo service jenkins start
-	wget http://localhost:8080/jnlpJars/jenkins-cli.jar
-	java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin checkstyle cloverphp crap4j dry htmlpublisher jdepend plot pmd violations xunit
-	java -jar jenkins-cli.jar -s http://localhost:8080 safe-restart
-fi
 
 echo "Installing composer packages...."
 echo $COMPOSER_HOME
