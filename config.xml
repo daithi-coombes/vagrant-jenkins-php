@@ -12,7 +12,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <customWorkspace>/vagrant/project/nitevibe_public_html</customWorkspace>
+  <customWorkspace>/vagrant/project/default</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
       <command></command>
