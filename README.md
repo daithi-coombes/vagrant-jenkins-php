@@ -1,8 +1,7 @@
-# vagrant-jenkins-php
+# vagrant-jenkins-php beta
 Vagrant box for running Jenkins with PHP projects according to [jenkins-php.org](http://jenkins-php.org/)
 
-<b>nb</b> project is in `alpha` but [beta](https://github.com/daithi-coombes/vagrant-jenkins-php/milestones/beta) is coming shortly. Make sure you read the [issues](https://github.com/daithi-coombes/vagrant-jenkins-php/issues)
-
+Initial box: 
 Vagrant box: https://atlas.hashicorp.com/daithi/boxes/jenkins-php
 
 # Installation
