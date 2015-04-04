@@ -1,6 +1,6 @@
 *.box
 .vagrant
-.composer/
+.composer
 project/
 
 # build
