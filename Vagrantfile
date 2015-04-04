@@ -12,7 +12,8 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "debian-wheezy32-jenkins"
+  config.vm.url = "http://tools.swergroup.com/downloads/wheezy32.box"
+  config.vm.box = "debian-wheezy32"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
