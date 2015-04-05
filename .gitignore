@@ -1,7 +1,10 @@
 *.box
 .vagrant
-.composer/
+.composer/*
+!.composer/composer.json
 project/
+vendor/
+composer.lock
 jenkins-cli.jar
 
 # build

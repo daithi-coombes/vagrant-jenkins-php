@@ -6,6 +6,6 @@
                 "pdepend/pdepend": "dev-master",
                 "phpmd/phpmd": "@stable",
                 "sebastian/phpcpd": "*",
-                "theseer/phpdox": "dev-master",
+                "theseer/phpdox": "dev-master"
         }
 }

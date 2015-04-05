@@ -1,10 +1,12 @@
-sudo sed -i -e 's/\.it\./\.ie\./g' /etc/apt/sources.list
 sudo apt-get -y update
 sudo apt-get -y upgrade
+sudo apt-get install curl
 
 if [ ! -f /etc/init.d/jenkins ]; then
 	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
-	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+	string='deb http://pkg.jenkins-ci.org/debian binary/'
+	sudo sed -e "\|$string|h; \${x;s|$string||;{g;t};a\\" -e "$string" -e "}" /etc/apt/sources.list.d/jenkins.list
+	#sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 	sudo apt-get update
 	sudo apt-get -y install jenkins
 	sudo service jenkins start
@@ -16,7 +18,7 @@ if [ ! -f /etc/init.d/jenkins ]; then
 	done
 fi
 
-sudo apt-get -y install php5-cli curl
+sudo apt-get -y install php5-cli
 sudo apt-get -y install php5-curl php5-xsl php5-xdebug
 
 if [ ! -f /usr/local/bin/composer ]; then
