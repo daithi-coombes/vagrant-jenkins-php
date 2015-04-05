@@ -3,7 +3,7 @@
                 "phpunit/phpunit": "*",
                 "squizlabs/php_codesniffer": "*@dev",
                 "phploc/phploc": "2.1.*@dev",
-                "pdepend/pdepend": "dev-master",
+                "pdepend/pdepend": "1.1.1",
                 "phpmd/phpmd": "@stable",
                 "sebastian/phpcpd": "*",
                 "theseer/phpdox": "dev-master"

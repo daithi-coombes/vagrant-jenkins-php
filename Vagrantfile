@@ -9,23 +9,22 @@ $script = <<SCRIPT
 
 # Update & Install
 echo 'Updating and installing ubuntu packages...'
-#sudo apt-get update
-#sudo apt-get -y upgrade
-#sudo apt-get install -y curl nano git
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get install -y curl nano git
 
 # Install Jenkins
 echo 'Installing jenkins...'
-#source /vagrant/scripts/jenkins.sh
+source /vagrant/scripts/jenkins.sh
 
 # Install PHP
 echo 'Installing PHP...'
-#source /vagrant/scripts/php.sh
+source /vagrant/scripts/php.sh
 
 echo 'Installing composer...'
-#source /vagrant/scripts/composer.sh
+source /vagrant/scripts/composer.sh
 
 echo 'Installing composer packages...'
-cp -a /vagrant/composer.json /vagrant/.composer
 cd /vagrant/.composer
 composer install
 
