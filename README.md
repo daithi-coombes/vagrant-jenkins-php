@@ -12,6 +12,7 @@ vagrant box add jenkins-php-dev http://tools.swergroup.com/downloads/wheezy32.bo
 vagrant init jenkins-php-dev
 vagrant up
 ```
+
 goto [http://localhost:8081](http://localhost:8081) to access the `Jenkins CI`. Also please read the [issues](https://github.com/daithi-coombes/vagrant-jenkins-php/issues) as this project is still in `alpha` - [beta](https://github.com/daithi-coombes/vagrant-jenkins-php/milestones/beta) coming soon.
 
 # Example

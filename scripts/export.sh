@@ -7,7 +7,7 @@ echo "**************************************************************************
 echo 'Exporting environment variables...'
 
 # set ssh logins to run bash (ie .bashrc)
-chsh -s /bin/bash
+sudo chsh -s /bin/bash
 
 # Composer
 _string='export COMPOSER_HOME=/vagrant/.composer'
