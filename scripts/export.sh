@@ -11,12 +11,12 @@ sudo chsh -s /bin/bash
 
 # Composer
 _string='export COMPOSER_HOME=/vagrant/.composer'
-_file='/home/vagrant/.bashrc'
+_file='/etc/bash.bashrc'
 sudo grep -q -F "$_string" $_file || echo "$_string" >> $_file
-echo ".... COMPOSER_HOME = $COMPOSER_HOME"
+echo ".... COMPOSER_HOME = /vagrant/.composer"
 
 # PATH
 _string='export PATH=/vagrant/.composer/vendor/bin:$PATH'
-_file='/home/vagrant/.bashrc'
+_file='/etc/bash.bashrc'
 sudo grep -q -F "$_string" $_file || echo "$_string" >> $_file
 echo ".... PATH = $PATH"

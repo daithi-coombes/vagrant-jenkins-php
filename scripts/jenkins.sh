@@ -24,3 +24,13 @@ if [ ! -f /home/vagrant/jenkins-cli.jar ]; then
 		java -jar jenkins-cli.jar -s http://localhost:8080 safe-restart
 	done
 fi
+
+# create default job
+if [ ! -f /var/lib/jenkins/jobs/default/config.xml ]; then
+    echo '.... building jenkins default job'
+    sudo mkdir -p /var/lib/jenkins/jobs/default
+    sudo cp /vagrant/config.xml /var/lib/jenkins/jobs/default/config.xml
+    sudo chown -R jenkins:jenkins /var/lib/jenkins/jobs/default
+    cd ~
+    java -jar jenkins-cli.jar -s http://localhost:8080 reload-configuration
+fi

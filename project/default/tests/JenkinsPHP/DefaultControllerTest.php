@@ -1,8 +1,8 @@
 <?php
-namespace defaultTest;
-use default;
+namespace JenkinsPHPTest;
+use JenkinsPHP;
 
-class DefaultControllerTest extends PHPUnit_Framework_TestCase
+class DefaultControllerTest extends \PHPUnit_Framework_TestCase
 {
 
     public function testFactory()

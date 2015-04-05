@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1428259650">
+  <project timestamp="1428259650">
+    <package name="PhpParser">
+      <file name="/vagrant/.composer/vendor/nikic/php-parser/lib/PhpParser/Autoloader.php">
+        <class name="Autoloader" namespace="PhpParser">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="279" ncloc="250" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <file name="/vagrant/project/default/bootstrap.php">
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <metrics loc="30" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <package name="JenkinsPHP">
+      <file name="/vagrant/project/default/src/JenkinsPHP/DefaultController.php">
+        <class name="DefaultController" namespace="JenkinsPHP">
+          <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="15" coveredelements="0"/>
+        </class>
+        <line num="7" type="method" name="__construct" crap="2" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <line num="12" type="method" name="factory" crap="2" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="setParams" crap="12" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="34" type="method" name="doLogic" crap="2" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <metrics loc="38" ncloc="38" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="15" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="3" loc="347" ncloc="308" classes="2" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="23" coveredelements="0"/>
+  </project>
+</coverage>

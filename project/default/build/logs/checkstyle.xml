@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="2.3.1">
+<file name="/vagrant/project/default/src/JenkinsPHP/DefaultController.php">
+ <error line="2" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="5" column="1" severity="error" message="Class name &quot;&quot; is not in camel caps format" source="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+ <error line="5" column="24" severity="error" message="Opening brace of a class must be on the line after the definition" source="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+ <error line="24" column="9" severity="error" message="Expected 1 space before &quot;=&gt;&quot;; 0 found" source="Squiz.ControlStructures.ForEachLoopDeclaration.NoSpaceBeforeArrow"/>
+ <error line="24" column="9" severity="error" message="Expected 1 space after &quot;=&gt;&quot;; 0 found" source="Squiz.ControlStructures.ForEachLoopDeclaration.NoSpaceAfterArrow"/>
+ <error line="24" column="48" severity="error" message="Expected 1 newline after opening brace; 2 found" source="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
+ <error line="26" column="17" severity="error" message="Expected 0 spaces after opening bracket; 1 found" source="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+ <error line="26" column="51" severity="error" message="Expected 0 spaces before closing bracket; 1 found" source="PSR2.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
+</file>
+</checkstyle>
+

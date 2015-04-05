@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2015-04-05 18:47:30</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>8</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>31</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package/>
+      <className>Autoloader</className>
+      <methodName>register</methodName>
+      <methodSignature>register($prepend = false)</methodSignature>
+      <fullMethod>register($prepend = false)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Autoloader</className>
+      <methodName>autoload</methodName>
+      <methodSignature>autoload($class)</methodSignature>
+      <fullMethod>autoload($class)</fullMethod>
+      <crap>7</crap>
+      <complexity>7</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Autoloader</className>
+      <methodName>registerPhp7Alias</methodName>
+      <methodSignature>registerPhp7Alias($old, $new)</methodSignature>
+      <fullMethod>registerPhp7Alias($old, $new)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Autoloader</className>
+      <methodName>registerNonNamespacedAliases</methodName>
+      <methodSignature>registerNonNamespacedAliases()</methodSignature>
+      <fullMethod>registerNonNamespacedAliases()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>DefaultController</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>DefaultController</className>
+      <methodName>factory</methodName>
+      <methodSignature>factory(array $params)</methodSignature>
+      <fullMethod>factory(array $params)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>DefaultController</className>
+      <methodName>setParams</methodName>
+      <methodSignature>setParams(array $params)</methodSignature>
+      <fullMethod>setParams(array $params)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>DefaultController</className>
+      <methodName>doLogic</methodName>
+      <methodSignature>doLogic()</methodSignature>
+      <fullMethod>doLogic()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

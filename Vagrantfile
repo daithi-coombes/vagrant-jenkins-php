@@ -11,7 +11,7 @@ $script = <<SCRIPT
 echo 'Updating and installing ubuntu packages...'
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get install -y curl nano git
+sudo apt-get install -y curl nano git ant
 
 # Install Jenkins
 echo 'Installing jenkins...'
@@ -24,12 +24,11 @@ source /vagrant/scripts/php.sh
 echo 'Installing composer...'
 source /vagrant/scripts/composer.sh
 
-echo 'Installing composer packages...'
-cd /vagrant/.composer
-composer install
-
 echo 'Environment variables...'
 source /vagrant/scripts/export.sh
+
+#echo 'Fix vagrant sync_folder bug: https://github.com/mitchellh/vagrant/issues/936'
+#source /vagrant/scripts/sync_folder.sh
 
 SCRIPT
 
@@ -37,8 +36,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "jenkins-php-dev"
   config.vm.network "forwarded_port", guest: 8080, host: 8081
-  config.vm.synced_folder "./project", "/vagrant/project"
+  config.vm.synced_folder "./project", "/vagrant/project",
+    owner: "jenkins", group: "jenkins"
   config.vm.provision :shell, :inline => $script
-  #config.vm.provision :shell, :inline => $install_user_vars
-
 end

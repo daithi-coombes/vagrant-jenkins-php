@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="2" assertions="0" failures="0" errors="0" time="0.002407">
+    <testsuite name="JenkinsPHPTest\DefaultControllerTest" file="/vagrant/project/default/tests/JenkinsPHP/DefaultControllerTest.php" tests="2" assertions="0" failures="0" errors="0" time="0.002407">
+      <testcase name="testFactory" class="JenkinsPHPTest\DefaultControllerTest" file="/vagrant/project/default/tests/JenkinsPHP/DefaultControllerTest.php" line="8" assertions="0" time="0.001396"/>
+      <testcase name="testDoLogic" class="JenkinsPHPTest\DefaultControllerTest" file="/vagrant/project/default/tests/JenkinsPHP/DefaultControllerTest.php" line="13" assertions="0" time="0.001011"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,4 +1,6 @@
 <?php
+namespace JenkinsPHP;
+use JenkinsPHP;
 
 class DefaultController{
 
@@ -11,7 +13,7 @@ class DefaultController{
     {
 
         $obj = new DefaultController($params);
-        $obj->set_params($params);
+        $obj->setParams($params);
 
         return $obj;
     }
